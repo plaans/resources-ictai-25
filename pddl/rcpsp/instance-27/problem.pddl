@@ -1,0 +1,6 @@
+(define (problem socs2025_rcpsp_17-problem)
+ (:domain socs2025_rcpsp_17-domain)
+ (:init (= (r1) 13) (= (r2) 11) (= (r3) 14) (= (r4) 14))
+ (:goal (and (<= 0 (r1)) (<= (r1) 13) (<= 0 (r2)) (<= (r2) 11) (<= 0 (r3)) (<= (r3) 14) (<= 0 (r4)) (<= (r4) 14) (a1_pres) (a2_pres) (a3_pres) (a4_pres) (a5_pres) (a6_pres) (a7_pres) (a8_pres) (a9_pres) (a10_pres) (a11_pres) (a12_pres) (a13_pres) (a14_pres) (a15_pres) (a16_pres) (a17_pres) (a18_pres) (a19_pres) (a20_pres) (a21_pres) (a22_pres) (a23_pres) (a24_pres) (a25_pres) (a26_pres) (a27_pres) (a28_pres) (a29_pres) (a30_pres) (a31_pres) (a32_pres) (a33_pres) (a34_pres) (a35_pres) (a36_pres) (a37_pres) (a38_pres) (a39_pres) (a40_pres) (a41_pres) (a42_pres) (a43_pres) (a44_pres) (a45_pres) (a46_pres) (a47_pres) (a48_pres) (a49_pres) (a50_pres) (a51_pres) (a52_pres) (a53_pres) (a54_pres) (a55_pres) (a56_pres) (a57_pres) (a58_pres) (a59_pres) (a60_pres) (a61_pres) (a62_pres)))
+ (:metric minimize (total-time))
+)

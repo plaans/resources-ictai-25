@@ -1,0 +1,505 @@
+(define (domain socs2025_jobshop_36-domain)
+ (:requirements :strips :negative-preconditions :numeric-fluents :durative-actions)
+ (:predicates (t_0_0_pres) (t_0_1_pres) (t_0_2_pres) (t_0_3_pres) (t_0_4_pres) (t_0_5_pres) (t_0_6_pres) (t_0_7_pres) (t_0_8_pres) (t_0_9_pres) (t_1_0_pres) (t_1_1_pres) (t_1_2_pres) (t_1_3_pres) (t_1_4_pres) (t_1_5_pres) (t_1_6_pres) (t_1_7_pres) (t_1_8_pres) (t_1_9_pres) (t_2_0_pres) (t_2_1_pres) (t_2_2_pres) (t_2_3_pres) (t_2_4_pres) (t_2_5_pres) (t_2_6_pres) (t_2_7_pres) (t_2_8_pres) (t_2_9_pres) (t_3_0_pres) (t_3_1_pres) (t_3_2_pres) (t_3_3_pres) (t_3_4_pres) (t_3_5_pres) (t_3_6_pres) (t_3_7_pres) (t_3_8_pres) (t_3_9_pres) (t_4_0_pres) (t_4_1_pres) (t_4_2_pres) (t_4_3_pres) (t_4_4_pres) (t_4_5_pres) (t_4_6_pres) (t_4_7_pres) (t_4_8_pres) (t_4_9_pres) (t_5_0_pres) (t_5_1_pres) (t_5_2_pres) (t_5_3_pres) (t_5_4_pres) (t_5_5_pres) (t_5_6_pres) (t_5_7_pres) (t_5_8_pres) (t_5_9_pres) (t_6_0_pres) (t_6_1_pres) (t_6_2_pres) (t_6_3_pres) (t_6_4_pres) (t_6_5_pres) (t_6_6_pres) (t_6_7_pres) (t_6_8_pres) (t_6_9_pres) (t_7_0_pres) (t_7_1_pres) (t_7_2_pres) (t_7_3_pres) (t_7_4_pres) (t_7_5_pres) (t_7_6_pres) (t_7_7_pres) (t_7_8_pres) (t_7_9_pres) (t_8_0_pres) (t_8_1_pres) (t_8_2_pres) (t_8_3_pres) (t_8_4_pres) (t_8_5_pres) (t_8_6_pres) (t_8_7_pres) (t_8_8_pres) (t_8_9_pres) (t_9_0_pres) (t_9_1_pres) (t_9_2_pres) (t_9_3_pres) (t_9_4_pres) (t_9_5_pres) (t_9_6_pres) (t_9_7_pres) (t_9_8_pres) (t_9_9_pres))
+ (:functions (m1) (m2) (m3) (m4) (m5) (m6) (m7) (m8) (m9) (m10) (operators))
+ (:durative-action t_0_0
+  :parameters ()
+  :duration (= ?duration 21)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_0_pres))))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_0_0_pres))))
+ (:durative-action t_0_1
+  :parameters ()
+  :duration (= ?duration 71)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_1_pres)))(at start (t_0_0_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_0_1_pres))))
+ (:durative-action t_0_2
+  :parameters ()
+  :duration (= ?duration 16)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_2_pres)))(at start (t_0_1_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_0_2_pres))))
+ (:durative-action t_0_3
+  :parameters ()
+  :duration (= ?duration 52)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_3_pres)))(at start (t_0_2_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_0_3_pres))))
+ (:durative-action t_0_4
+  :parameters ()
+  :duration (= ?duration 26)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_4_pres)))(at start (t_0_3_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_0_4_pres))))
+ (:durative-action t_0_5
+  :parameters ()
+  :duration (= ?duration 34)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_5_pres)))(at start (t_0_4_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_0_5_pres))))
+ (:durative-action t_0_6
+  :parameters ()
+  :duration (= ?duration 53)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_6_pres)))(at start (t_0_5_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_0_6_pres))))
+ (:durative-action t_0_7
+  :parameters ()
+  :duration (= ?duration 21)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_7_pres)))(at start (t_0_6_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_0_7_pres))))
+ (:durative-action t_0_8
+  :parameters ()
+  :duration (= ?duration 55)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_8_pres)))(at start (t_0_7_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_0_8_pres))))
+ (:durative-action t_0_9
+  :parameters ()
+  :duration (= ?duration 95)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_0_9_pres)))(at start (t_0_8_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_0_9_pres))))
+ (:durative-action t_1_0
+  :parameters ()
+  :duration (= ?duration 55)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_0_pres))))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_1_0_pres))))
+ (:durative-action t_1_1
+  :parameters ()
+  :duration (= ?duration 31)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_1_pres)))(at start (t_1_0_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_1_1_pres))))
+ (:durative-action t_1_2
+  :parameters ()
+  :duration (= ?duration 98)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_2_pres)))(at start (t_1_1_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_1_2_pres))))
+ (:durative-action t_1_3
+  :parameters ()
+  :duration (= ?duration 79)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_3_pres)))(at start (t_1_2_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_1_3_pres))))
+ (:durative-action t_1_4
+  :parameters ()
+  :duration (= ?duration 12)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_4_pres)))(at start (t_1_3_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_1_4_pres))))
+ (:durative-action t_1_5
+  :parameters ()
+  :duration (= ?duration 66)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_5_pres)))(at start (t_1_4_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_1_5_pres))))
+ (:durative-action t_1_6
+  :parameters ()
+  :duration (= ?duration 42)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_6_pres)))(at start (t_1_5_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_1_6_pres))))
+ (:durative-action t_1_7
+  :parameters ()
+  :duration (= ?duration 77)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_7_pres)))(at start (t_1_6_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_1_7_pres))))
+ (:durative-action t_1_8
+  :parameters ()
+  :duration (= ?duration 77)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_8_pres)))(at start (t_1_7_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_1_8_pres))))
+ (:durative-action t_1_9
+  :parameters ()
+  :duration (= ?duration 39)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_1_9_pres)))(at start (t_1_8_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_1_9_pres))))
+ (:durative-action t_2_0
+  :parameters ()
+  :duration (= ?duration 34)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_0_pres))))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_2_0_pres))))
+ (:durative-action t_2_1
+  :parameters ()
+  :duration (= ?duration 64)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_1_pres)))(at start (t_2_0_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_2_1_pres))))
+ (:durative-action t_2_2
+  :parameters ()
+  :duration (= ?duration 62)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_2_pres)))(at start (t_2_1_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_2_2_pres))))
+ (:durative-action t_2_3
+  :parameters ()
+  :duration (= ?duration 19)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_3_pres)))(at start (t_2_2_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_2_3_pres))))
+ (:durative-action t_2_4
+  :parameters ()
+  :duration (= ?duration 92)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_4_pres)))(at start (t_2_3_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_2_4_pres))))
+ (:durative-action t_2_5
+  :parameters ()
+  :duration (= ?duration 79)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_5_pres)))(at start (t_2_4_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_2_5_pres))))
+ (:durative-action t_2_6
+  :parameters ()
+  :duration (= ?duration 43)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_6_pres)))(at start (t_2_5_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_2_6_pres))))
+ (:durative-action t_2_7
+  :parameters ()
+  :duration (= ?duration 54)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_7_pres)))(at start (t_2_6_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_2_7_pres))))
+ (:durative-action t_2_8
+  :parameters ()
+  :duration (= ?duration 83)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_8_pres)))(at start (t_2_7_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_2_8_pres))))
+ (:durative-action t_2_9
+  :parameters ()
+  :duration (= ?duration 37)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_2_9_pres)))(at start (t_2_8_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_2_9_pres))))
+ (:durative-action t_3_0
+  :parameters ()
+  :duration (= ?duration 87)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_0_pres))))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_3_0_pres))))
+ (:durative-action t_3_1
+  :parameters ()
+  :duration (= ?duration 69)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_1_pres)))(at start (t_3_0_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_3_1_pres))))
+ (:durative-action t_3_2
+  :parameters ()
+  :duration (= ?duration 87)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_2_pres)))(at start (t_3_1_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_3_2_pres))))
+ (:durative-action t_3_3
+  :parameters ()
+  :duration (= ?duration 38)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_3_pres)))(at start (t_3_2_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_3_3_pres))))
+ (:durative-action t_3_4
+  :parameters ()
+  :duration (= ?duration 24)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_4_pres)))(at start (t_3_3_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_3_4_pres))))
+ (:durative-action t_3_5
+  :parameters ()
+  :duration (= ?duration 83)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_5_pres)))(at start (t_3_4_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_3_5_pres))))
+ (:durative-action t_3_6
+  :parameters ()
+  :duration (= ?duration 41)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_6_pres)))(at start (t_3_5_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_3_6_pres))))
+ (:durative-action t_3_7
+  :parameters ()
+  :duration (= ?duration 93)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_7_pres)))(at start (t_3_6_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_3_7_pres))))
+ (:durative-action t_3_8
+  :parameters ()
+  :duration (= ?duration 77)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_8_pres)))(at start (t_3_7_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_3_8_pres))))
+ (:durative-action t_3_9
+  :parameters ()
+  :duration (= ?duration 60)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_3_9_pres)))(at start (t_3_8_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_3_9_pres))))
+ (:durative-action t_4_0
+  :parameters ()
+  :duration (= ?duration 98)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_0_pres))))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_4_0_pres))))
+ (:durative-action t_4_1
+  :parameters ()
+  :duration (= ?duration 44)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_1_pres)))(at start (t_4_0_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_4_1_pres))))
+ (:durative-action t_4_2
+  :parameters ()
+  :duration (= ?duration 25)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_2_pres)))(at start (t_4_1_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_4_2_pres))))
+ (:durative-action t_4_3
+  :parameters ()
+  :duration (= ?duration 75)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_3_pres)))(at start (t_4_2_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_4_3_pres))))
+ (:durative-action t_4_4
+  :parameters ()
+  :duration (= ?duration 43)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_4_pres)))(at start (t_4_3_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_4_4_pres))))
+ (:durative-action t_4_5
+  :parameters ()
+  :duration (= ?duration 49)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_5_pres)))(at start (t_4_4_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_4_5_pres))))
+ (:durative-action t_4_6
+  :parameters ()
+  :duration (= ?duration 96)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_6_pres)))(at start (t_4_5_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_4_6_pres))))
+ (:durative-action t_4_7
+  :parameters ()
+  :duration (= ?duration 77)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_7_pres)))(at start (t_4_6_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_4_7_pres))))
+ (:durative-action t_4_8
+  :parameters ()
+  :duration (= ?duration 17)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_8_pres)))(at start (t_4_7_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_4_8_pres))))
+ (:durative-action t_4_9
+  :parameters ()
+  :duration (= ?duration 79)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_4_9_pres)))(at start (t_4_8_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_4_9_pres))))
+ (:durative-action t_5_0
+  :parameters ()
+  :duration (= ?duration 35)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_0_pres))))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_5_0_pres))))
+ (:durative-action t_5_1
+  :parameters ()
+  :duration (= ?duration 76)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_1_pres)))(at start (t_5_0_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_5_1_pres))))
+ (:durative-action t_5_2
+  :parameters ()
+  :duration (= ?duration 28)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_2_pres)))(at start (t_5_1_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_5_2_pres))))
+ (:durative-action t_5_3
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_3_pres)))(at start (t_5_2_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_5_3_pres))))
+ (:durative-action t_5_4
+  :parameters ()
+  :duration (= ?duration 61)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_4_pres)))(at start (t_5_3_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_5_4_pres))))
+ (:durative-action t_5_5
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_5_pres)))(at start (t_5_4_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_5_5_pres))))
+ (:durative-action t_5_6
+  :parameters ()
+  :duration (= ?duration 95)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_6_pres)))(at start (t_5_5_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_5_6_pres))))
+ (:durative-action t_5_7
+  :parameters ()
+  :duration (= ?duration 35)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_7_pres)))(at start (t_5_6_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_5_7_pres))))
+ (:durative-action t_5_8
+  :parameters ()
+  :duration (= ?duration 7)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_8_pres)))(at start (t_5_7_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_5_8_pres))))
+ (:durative-action t_5_9
+  :parameters ()
+  :duration (= ?duration 95)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_5_9_pres)))(at start (t_5_8_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_5_9_pres))))
+ (:durative-action t_6_0
+  :parameters ()
+  :duration (= ?duration 16)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_0_pres))))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_6_0_pres))))
+ (:durative-action t_6_1
+  :parameters ()
+  :duration (= ?duration 59)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_1_pres)))(at start (t_6_0_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_6_1_pres))))
+ (:durative-action t_6_2
+  :parameters ()
+  :duration (= ?duration 46)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_2_pres)))(at start (t_6_1_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_6_2_pres))))
+ (:durative-action t_6_3
+  :parameters ()
+  :duration (= ?duration 91)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_3_pres)))(at start (t_6_2_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_6_3_pres))))
+ (:durative-action t_6_4
+  :parameters ()
+  :duration (= ?duration 43)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_4_pres)))(at start (t_6_3_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_6_4_pres))))
+ (:durative-action t_6_5
+  :parameters ()
+  :duration (= ?duration 50)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_5_pres)))(at start (t_6_4_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_6_5_pres))))
+ (:durative-action t_6_6
+  :parameters ()
+  :duration (= ?duration 52)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_6_pres)))(at start (t_6_5_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_6_6_pres))))
+ (:durative-action t_6_7
+  :parameters ()
+  :duration (= ?duration 59)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_7_pres)))(at start (t_6_6_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_6_7_pres))))
+ (:durative-action t_6_8
+  :parameters ()
+  :duration (= ?duration 28)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_8_pres)))(at start (t_6_7_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_6_8_pres))))
+ (:durative-action t_6_9
+  :parameters ()
+  :duration (= ?duration 27)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_6_9_pres)))(at start (t_6_8_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_6_9_pres))))
+ (:durative-action t_7_0
+  :parameters ()
+  :duration (= ?duration 45)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_0_pres))))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_7_0_pres))))
+ (:durative-action t_7_1
+  :parameters ()
+  :duration (= ?duration 87)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_1_pres)))(at start (t_7_0_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_7_1_pres))))
+ (:durative-action t_7_2
+  :parameters ()
+  :duration (= ?duration 41)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_2_pres)))(at start (t_7_1_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_7_2_pres))))
+ (:durative-action t_7_3
+  :parameters ()
+  :duration (= ?duration 20)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_3_pres)))(at start (t_7_2_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_7_3_pres))))
+ (:durative-action t_7_4
+  :parameters ()
+  :duration (= ?duration 54)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_4_pres)))(at start (t_7_3_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_7_4_pres))))
+ (:durative-action t_7_5
+  :parameters ()
+  :duration (= ?duration 43)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_5_pres)))(at start (t_7_4_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_7_5_pres))))
+ (:durative-action t_7_6
+  :parameters ()
+  :duration (= ?duration 14)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_6_pres)))(at start (t_7_5_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_7_6_pres))))
+ (:durative-action t_7_7
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_7_pres)))(at start (t_7_6_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_7_7_pres))))
+ (:durative-action t_7_8
+  :parameters ()
+  :duration (= ?duration 39)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_8_pres)))(at start (t_7_7_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_7_8_pres))))
+ (:durative-action t_7_9
+  :parameters ()
+  :duration (= ?duration 71)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_7_9_pres)))(at start (t_7_8_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_7_9_pres))))
+ (:durative-action t_8_0
+  :parameters ()
+  :duration (= ?duration 33)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_0_pres))))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_8_0_pres))))
+ (:durative-action t_8_1
+  :parameters ()
+  :duration (= ?duration 37)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_1_pres)))(at start (t_8_0_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_8_1_pres))))
+ (:durative-action t_8_2
+  :parameters ()
+  :duration (= ?duration 66)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_2_pres)))(at start (t_8_1_pres)))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_8_2_pres))))
+ (:durative-action t_8_3
+  :parameters ()
+  :duration (= ?duration 33)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_3_pres)))(at start (t_8_2_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_8_3_pres))))
+ (:durative-action t_8_4
+  :parameters ()
+  :duration (= ?duration 26)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_4_pres)))(at start (t_8_3_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_8_4_pres))))
+ (:durative-action t_8_5
+  :parameters ()
+  :duration (= ?duration 8)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_5_pres)))(at start (t_8_4_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_8_5_pres))))
+ (:durative-action t_8_6
+  :parameters ()
+  :duration (= ?duration 28)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_6_pres)))(at start (t_8_5_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_8_6_pres))))
+ (:durative-action t_8_7
+  :parameters ()
+  :duration (= ?duration 89)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_7_pres)))(at start (t_8_6_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_8_7_pres))))
+ (:durative-action t_8_8
+  :parameters ()
+  :duration (= ?duration 42)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_8_pres)))(at start (t_8_7_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_8_8_pres))))
+ (:durative-action t_8_9
+  :parameters ()
+  :duration (= ?duration 78)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_8_9_pres)))(at start (t_8_8_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_8_9_pres))))
+ (:durative-action t_9_0
+  :parameters ()
+  :duration (= ?duration 69)
+  :condition (and (at start (<= 0 (m9)))(at start (<= (m9) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m9)))(at end (<= (m9) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_0_pres))))
+  :effect (and (at start (decrease (m9) 1)) (at start (decrease (operators) 1)) (at end (increase (m9) 1)) (at end (increase (operators) 1)) (at end (t_9_0_pres))))
+ (:durative-action t_9_1
+  :parameters ()
+  :duration (= ?duration 81)
+  :condition (and (at start (<= 0 (m10)))(at start (<= (m10) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m10)))(at end (<= (m10) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_1_pres)))(at start (t_9_0_pres)))
+  :effect (and (at start (decrease (m10) 1)) (at start (decrease (operators) 1)) (at end (increase (m10) 1)) (at end (increase (operators) 1)) (at end (t_9_1_pres))))
+ (:durative-action t_9_2
+  :parameters ()
+  :duration (= ?duration 94)
+  :condition (and (at start (<= 0 (m3)))(at start (<= (m3) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m3)))(at end (<= (m3) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_2_pres)))(at start (t_9_1_pres)))
+  :effect (and (at start (decrease (m3) 1)) (at start (decrease (operators) 1)) (at end (increase (m3) 1)) (at end (increase (operators) 1)) (at end (t_9_2_pres))))
+ (:durative-action t_9_3
+  :parameters ()
+  :duration (= ?duration 96)
+  :condition (and (at start (<= 0 (m5)))(at start (<= (m5) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m5)))(at end (<= (m5) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_3_pres)))(at start (t_9_2_pres)))
+  :effect (and (at start (decrease (m5) 1)) (at start (decrease (operators) 1)) (at end (increase (m5) 1)) (at end (increase (operators) 1)) (at end (t_9_3_pres))))
+ (:durative-action t_9_4
+  :parameters ()
+  :duration (= ?duration 27)
+  :condition (and (at start (<= 0 (m4)))(at start (<= (m4) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m4)))(at end (<= (m4) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_4_pres)))(at start (t_9_3_pres)))
+  :effect (and (at start (decrease (m4) 1)) (at start (decrease (operators) 1)) (at end (increase (m4) 1)) (at end (increase (operators) 1)) (at end (t_9_4_pres))))
+ (:durative-action t_9_5
+  :parameters ()
+  :duration (= ?duration 69)
+  :condition (and (at start (<= 0 (m1)))(at start (<= (m1) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m1)))(at end (<= (m1) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_5_pres)))(at start (t_9_4_pres)))
+  :effect (and (at start (decrease (m1) 1)) (at start (decrease (operators) 1)) (at end (increase (m1) 1)) (at end (increase (operators) 1)) (at end (t_9_5_pres))))
+ (:durative-action t_9_6
+  :parameters ()
+  :duration (= ?duration 45)
+  :condition (and (at start (<= 0 (m8)))(at start (<= (m8) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m8)))(at end (<= (m8) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_6_pres)))(at start (t_9_5_pres)))
+  :effect (and (at start (decrease (m8) 1)) (at start (decrease (operators) 1)) (at end (increase (m8) 1)) (at end (increase (operators) 1)) (at end (t_9_6_pres))))
+ (:durative-action t_9_7
+  :parameters ()
+  :duration (= ?duration 78)
+  :condition (and (at start (<= 0 (m7)))(at start (<= (m7) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m7)))(at end (<= (m7) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_7_pres)))(at start (t_9_6_pres)))
+  :effect (and (at start (decrease (m7) 1)) (at start (decrease (operators) 1)) (at end (increase (m7) 1)) (at end (increase (operators) 1)) (at end (t_9_7_pres))))
+ (:durative-action t_9_8
+  :parameters ()
+  :duration (= ?duration 74)
+  :condition (and (at start (<= 0 (m2)))(at start (<= (m2) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m2)))(at end (<= (m2) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_8_pres)))(at start (t_9_7_pres)))
+  :effect (and (at start (decrease (m2) 1)) (at start (decrease (operators) 1)) (at end (increase (m2) 1)) (at end (increase (operators) 1)) (at end (t_9_8_pres))))
+ (:durative-action t_9_9
+  :parameters ()
+  :duration (= ?duration 84)
+  :condition (and (at start (<= 0 (m6)))(at start (<= (m6) 1))(at start (<= 0 (operators)))(at start (<= (operators) 5))(at end (<= 0 (m6)))(at end (<= (m6) 1))(at end (<= 0 (operators)))(at end (<= (operators) 5))(at start (not (t_9_9_pres)))(at start (t_9_8_pres)))
+  :effect (and (at start (decrease (m6) 1)) (at start (decrease (operators) 1)) (at end (increase (m6) 1)) (at end (increase (operators) 1)) (at end (t_9_9_pres))))
+)

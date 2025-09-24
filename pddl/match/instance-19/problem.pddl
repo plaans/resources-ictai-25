@@ -1,0 +1,6 @@
+(define (problem socs2025_match_cellar_1-problem)
+ (:domain socs2025_match_cellar_1-domain)
+ (:init (handfree) (= (num_matches) 3) (= (num_fuses) 6) (= (num_lit_matches) 0) (= (num_mended_fuses) 0))
+ (:goal (and (= (num_mended_fuses) 6)))
+ (:metric minimize (total-time))
+)

@@ -1,0 +1,6 @@
+(define (problem socs2025_rcpsp_9-problem)
+ (:domain socs2025_rcpsp_9-domain)
+ (:init (= (r1) 12) (= (r2) 11) (= (r3) 11) (= (r4) 13))
+ (:goal (and (<= 0 (r1)) (<= (r1) 12) (<= 0 (r2)) (<= (r2) 11) (<= 0 (r3)) (<= (r3) 11) (<= 0 (r4)) (<= (r4) 13) (a1_pres) (a2_pres) (a3_pres) (a4_pres) (a5_pres) (a6_pres) (a7_pres) (a8_pres) (a9_pres) (a10_pres) (a11_pres) (a12_pres) (a13_pres) (a14_pres) (a15_pres) (a16_pres) (a17_pres) (a18_pres) (a19_pres) (a20_pres) (a21_pres) (a22_pres) (a23_pres) (a24_pres) (a25_pres) (a26_pres) (a27_pres) (a28_pres) (a29_pres) (a30_pres) (a31_pres) (a32_pres)))
+ (:metric minimize (total-time))
+)

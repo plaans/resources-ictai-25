@@ -1,0 +1,315 @@
+(define (domain socs2025_rcpsp_15-domain)
+ (:requirements :strips :negative-preconditions :numeric-fluents :durative-actions)
+ (:predicates (a1_pres) (a2_pres) (a3_pres) (a4_pres) (a5_pres) (a6_pres) (a7_pres) (a8_pres) (a9_pres) (a10_pres) (a11_pres) (a12_pres) (a13_pres) (a14_pres) (a15_pres) (a16_pres) (a17_pres) (a18_pres) (a19_pres) (a20_pres) (a21_pres) (a22_pres) (a23_pres) (a24_pres) (a25_pres) (a26_pres) (a27_pres) (a28_pres) (a29_pres) (a30_pres) (a31_pres) (a32_pres) (a33_pres) (a34_pres) (a35_pres) (a36_pres) (a37_pres) (a38_pres) (a39_pres) (a40_pres) (a41_pres) (a42_pres) (a43_pres) (a44_pres) (a45_pres) (a46_pres) (a47_pres) (a48_pres) (a49_pres) (a50_pres) (a51_pres) (a52_pres) (a53_pres) (a54_pres) (a55_pres) (a56_pres) (a57_pres) (a58_pres) (a59_pres) (a60_pres) (a61_pres) (a62_pres))
+ (:functions (r1) (r2) (r3) (r4))
+ (:durative-action a1
+  :parameters ()
+  :duration (= ?duration 0)
+  :condition (and (at start (not (a1_pres))))
+  :effect (and (at end (a1_pres))))
+ (:durative-action a2
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a2_pres)))(at start (a1_pres)))
+  :effect (and (at start (decrease (r3) 8)) (at end (increase (r3) 8)) (at end (a2_pres))))
+ (:durative-action a3
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a3_pres)))(at start (a1_pres)))
+  :effect (and (at start (decrease (r1) 5)) (at end (increase (r1) 5)) (at end (a3_pres))))
+ (:durative-action a4
+  :parameters ()
+  :duration (= ?duration 6)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a4_pres)))(at start (a1_pres)))
+  :effect (and (at start (decrease (r2) 3)) (at end (increase (r2) 3)) (at end (a4_pres))))
+ (:durative-action a5
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a5_pres)))(at start (a4_pres)))
+  :effect (and (at start (decrease (r1) 2)) (at end (increase (r1) 2)) (at end (a5_pres))))
+ (:durative-action a6
+  :parameters ()
+  :duration (= ?duration 8)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a6_pres)))(at start (a5_pres)))
+  :effect (and (at start (decrease (r2) 4)) (at end (increase (r2) 4)) (at end (a6_pres))))
+ (:durative-action a7
+  :parameters ()
+  :duration (= ?duration 8)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a7_pres)))(at start (a2_pres)))
+  :effect (and (at start (decrease (r4) 8)) (at end (increase (r4) 8)) (at end (a7_pres))))
+ (:durative-action a8
+  :parameters ()
+  :duration (= ?duration 6)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a8_pres)))(at start (a5_pres)))
+  :effect (and (at start (decrease (r1) 2)) (at end (increase (r1) 2)) (at end (a8_pres))))
+ (:durative-action a9
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a9_pres)))(at start (a2_pres)))
+  :effect (and (at start (decrease (r4) 10)) (at end (increase (r4) 10)) (at end (a9_pres))))
+ (:durative-action a10
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a10_pres)))(at start (a2_pres)))
+  :effect (and (at start (decrease (r3) 3)) (at end (increase (r3) 3)) (at end (a10_pres))))
+ (:durative-action a11
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a11_pres)))(at start (a7_pres)))
+  :effect (and (at start (decrease (r4) 8)) (at end (increase (r4) 8)) (at end (a11_pres))))
+ (:durative-action a12
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a12_pres)))(at start (a4_pres)))
+  :effect (and (at start (decrease (r3) 10)) (at end (increase (r3) 10)) (at end (a12_pres))))
+ (:durative-action a13
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a13_pres)))(at start (a6_pres)))
+  :effect (and (at start (decrease (r4) 4)) (at end (increase (r4) 4)) (at end (a13_pres))))
+ (:durative-action a14
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a14_pres)))(at start (a11_pres)))
+  :effect (and (at start (decrease (r3) 6)) (at end (increase (r3) 6)) (at end (a14_pres))))
+ (:durative-action a15
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a15_pres)))(at start (a5_pres)))
+  :effect (and (at start (decrease (r1) 8)) (at end (increase (r1) 8)) (at end (a15_pres))))
+ (:durative-action a16
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a16_pres)))(at start (a8_pres))(at start (a15_pres)))
+  :effect (and (at start (decrease (r4) 6)) (at end (increase (r4) 6)) (at end (a16_pres))))
+ (:durative-action a17
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a17_pres)))(at start (a12_pres)))
+  :effect (and (at start (decrease (r2) 4)) (at end (increase (r2) 4)) (at end (a17_pres))))
+ (:durative-action a18
+  :parameters ()
+  :duration (= ?duration 7)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a18_pres)))(at start (a6_pres)))
+  :effect (and (at start (decrease (r4) 9)) (at end (increase (r4) 9)) (at end (a18_pres))))
+ (:durative-action a19
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a19_pres)))(at start (a11_pres)))
+  :effect (and (at start (decrease (r4) 1)) (at end (increase (r4) 1)) (at end (a19_pres))))
+ (:durative-action a20
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a20_pres)))(at start (a4_pres)))
+  :effect (and (at start (decrease (r4) 8)) (at end (increase (r4) 8)) (at end (a20_pres))))
+ (:durative-action a21
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a21_pres)))(at start (a20_pres)))
+  :effect (and (at start (decrease (r3) 10)) (at end (increase (r3) 10)) (at end (a21_pres))))
+ (:durative-action a22
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a22_pres)))(at start (a9_pres)))
+  :effect (and (at start (decrease (r3) 6)) (at end (increase (r3) 6)) (at end (a22_pres))))
+ (:durative-action a23
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a23_pres)))(at start (a21_pres)))
+  :effect (and (at start (decrease (r4) 6)) (at end (increase (r4) 6)) (at end (a23_pres))))
+ (:durative-action a24
+  :parameters ()
+  :duration (= ?duration 6)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a24_pres)))(at start (a9_pres)))
+  :effect (and (at start (decrease (r2) 6)) (at end (increase (r2) 6)) (at end (a24_pres))))
+ (:durative-action a25
+  :parameters ()
+  :duration (= ?duration 6)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a25_pres)))(at start (a13_pres))(at start (a14_pres)))
+  :effect (and (at start (decrease (r4) 7)) (at end (increase (r4) 7)) (at end (a25_pres))))
+ (:durative-action a26
+  :parameters ()
+  :duration (= ?duration 6)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a26_pres)))(at start (a17_pres)))
+  :effect (and (at start (decrease (r3) 5)) (at end (increase (r3) 5)) (at end (a26_pres))))
+ (:durative-action a27
+  :parameters ()
+  :duration (= ?duration 3)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a27_pres)))(at start (a20_pres))(at start (a22_pres)))
+  :effect (and (at start (decrease (r1) 6)) (at end (increase (r1) 6)) (at end (a27_pres))))
+ (:durative-action a28
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a28_pres)))(at start (a12_pres)))
+  :effect (and (at start (decrease (r2) 1)) (at end (increase (r2) 1)) (at end (a28_pres))))
+ (:durative-action a29
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a29_pres)))(at start (a26_pres)))
+  :effect (and (at start (decrease (r3) 3)) (at end (increase (r3) 3)) (at end (a29_pres))))
+ (:durative-action a30
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a30_pres)))(at start (a25_pres)))
+  :effect (and (at start (decrease (r1) 9)) (at end (increase (r1) 9)) (at end (a30_pres))))
+ (:durative-action a31
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a31_pres)))(at start (a6_pres)))
+  :effect (and (at start (decrease (r2) 2)) (at end (increase (r2) 2)) (at end (a31_pres))))
+ (:durative-action a32
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a32_pres)))(at start (a28_pres))(at start (a30_pres)))
+  :effect (and (at start (decrease (r4) 2)) (at end (increase (r4) 2)) (at end (a32_pres))))
+ (:durative-action a33
+  :parameters ()
+  :duration (= ?duration 3)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a33_pres)))(at start (a10_pres)))
+  :effect (and (at start (decrease (r4) 10)) (at end (increase (r4) 10)) (at end (a33_pres))))
+ (:durative-action a34
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a34_pres)))(at start (a24_pres)))
+  :effect (and (at start (decrease (r3) 4)) (at end (increase (r3) 4)) (at end (a34_pres))))
+ (:durative-action a35
+  :parameters ()
+  :duration (= ?duration 3)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a35_pres)))(at start (a31_pres)))
+  :effect (and (at start (decrease (r1) 5)) (at end (increase (r1) 5)) (at end (a35_pres))))
+ (:durative-action a36
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a36_pres)))(at start (a19_pres))(at start (a31_pres)))
+  :effect (and (at start (decrease (r4) 1)) (at end (increase (r4) 1)) (at end (a36_pres))))
+ (:durative-action a37
+  :parameters ()
+  :duration (= ?duration 8)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a37_pres)))(at start (a32_pres)))
+  :effect (and (at start (decrease (r2) 6)) (at end (increase (r2) 6)) (at end (a37_pres))))
+ (:durative-action a38
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a38_pres)))(at start (a16_pres)))
+  :effect (and (at start (decrease (r3) 5)) (at end (increase (r3) 5)) (at end (a38_pres))))
+ (:durative-action a39
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a39_pres)))(at start (a3_pres))(at start (a33_pres))(at start (a34_pres)))
+  :effect (and (at start (decrease (r4) 2)) (at end (increase (r4) 2)) (at end (a39_pres))))
+ (:durative-action a40
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a40_pres)))(at start (a11_pres)))
+  :effect (and (at start (decrease (r2) 1)) (at end (increase (r2) 1)) (at end (a40_pres))))
+ (:durative-action a41
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a41_pres)))(at start (a3_pres))(at start (a36_pres))(at start (a37_pres)))
+  :effect (and (at start (decrease (r1) 5)) (at end (increase (r1) 5)) (at end (a41_pres))))
+ (:durative-action a42
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a42_pres)))(at start (a10_pres)))
+  :effect (and (at start (decrease (r1) 10)) (at end (increase (r1) 10)) (at end (a42_pres))))
+ (:durative-action a43
+  :parameters ()
+  :duration (= ?duration 7)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a43_pres)))(at start (a18_pres)))
+  :effect (and (at start (decrease (r3) 2)) (at end (increase (r3) 2)) (at end (a43_pres))))
+ (:durative-action a44
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a44_pres)))(at start (a16_pres))(at start (a39_pres))(at start (a42_pres)))
+  :effect (and (at start (decrease (r3) 3)) (at end (increase (r3) 3)) (at end (a44_pres))))
+ (:durative-action a45
+  :parameters ()
+  :duration (= ?duration 3)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a45_pres)))(at start (a27_pres))(at start (a30_pres))(at start (a43_pres)))
+  :effect (and (at start (decrease (r3) 5)) (at end (increase (r3) 5)) (at end (a45_pres))))
+ (:durative-action a46
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a46_pres)))(at start (a21_pres)))
+  :effect (and (at start (decrease (r1) 5)) (at end (increase (r1) 5)) (at end (a46_pres))))
+ (:durative-action a47
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a47_pres)))(at start (a16_pres)))
+  :effect (and (at start (decrease (r1) 4)) (at end (increase (r1) 4)) (at end (a47_pres))))
+ (:durative-action a48
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a48_pres)))(at start (a12_pres)))
+  :effect (and (at start (decrease (r4) 10)) (at end (increase (r4) 10)) (at end (a48_pres))))
+ (:durative-action a49
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a49_pres)))(at start (a26_pres))(at start (a44_pres)))
+  :effect (and (at start (decrease (r1) 2)) (at end (increase (r1) 2)) (at end (a49_pres))))
+ (:durative-action a50
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a50_pres)))(at start (a41_pres)))
+  :effect (and (at start (decrease (r2) 4)) (at end (increase (r2) 4)) (at end (a50_pres))))
+ (:durative-action a51
+  :parameters ()
+  :duration (= ?duration 6)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a51_pres)))(at start (a3_pres))(at start (a28_pres)))
+  :effect (and (at start (decrease (r3) 6)) (at end (increase (r3) 6)) (at end (a51_pres))))
+ (:durative-action a52
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a52_pres)))(at start (a9_pres))(at start (a23_pres))(at start (a46_pres)))
+  :effect (and (at start (decrease (r1) 1)) (at end (increase (r1) 1)) (at end (a52_pres))))
+ (:durative-action a53
+  :parameters ()
+  :duration (= ?duration 8)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a53_pres)))(at start (a13_pres)))
+  :effect (and (at start (decrease (r4) 9)) (at end (increase (r4) 9)) (at end (a53_pres))))
+ (:durative-action a54
+  :parameters ()
+  :duration (= ?duration 10)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a54_pres)))(at start (a38_pres))(at start (a49_pres))(at start (a53_pres)))
+  :effect (and (at start (decrease (r1) 2)) (at end (increase (r1) 2)) (at end (a54_pres))))
+ (:durative-action a55
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a55_pres)))(at start (a32_pres))(at start (a54_pres)))
+  :effect (and (at start (decrease (r3) 8)) (at end (increase (r3) 8)) (at end (a55_pres))))
+ (:durative-action a56
+  :parameters ()
+  :duration (= ?duration 4)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a56_pres)))(at start (a50_pres))(at start (a52_pres)))
+  :effect (and (at start (decrease (r4) 9)) (at end (increase (r4) 9)) (at end (a56_pres))))
+ (:durative-action a57
+  :parameters ()
+  :duration (= ?duration 1)
+  :condition (and (at start (<= 0 (r2)))(at start (<= (r2) 7))(at end (<= 0 (r2)))(at end (<= (r2) 7))(at start (not (a57_pres)))(at start (a35_pres))(at start (a47_pres))(at start (a52_pres)))
+  :effect (and (at start (decrease (r2) 2)) (at end (increase (r2) 2)) (at end (a57_pres))))
+ (:durative-action a58
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r3)))(at start (<= (r3) 14))(at end (<= 0 (r3)))(at end (<= (r3) 14))(at start (not (a58_pres)))(at start (a45_pres))(at start (a48_pres))(at start (a55_pres)))
+  :effect (and (at start (decrease (r3) 1)) (at end (increase (r3) 1)) (at end (a58_pres))))
+ (:durative-action a59
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r1)))(at start (<= (r1) 13))(at end (<= 0 (r1)))(at end (<= (r1) 13))(at start (not (a59_pres)))(at start (a29_pres))(at start (a36_pres))(at start (a51_pres)))
+  :effect (and (at start (decrease (r1) 8)) (at end (increase (r1) 8)) (at end (a59_pres))))
+ (:durative-action a60
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a60_pres)))(at start (a42_pres))(at start (a56_pres))(at start (a57_pres)))
+  :effect (and (at start (decrease (r4) 6)) (at end (increase (r4) 6)) (at end (a60_pres))))
+ (:durative-action a61
+  :parameters ()
+  :duration (= ?duration 9)
+  :condition (and (at start (<= 0 (r4)))(at start (<= (r4) 14))(at end (<= 0 (r4)))(at end (<= (r4) 14))(at start (not (a61_pres)))(at start (a40_pres))(at start (a58_pres)))
+  :effect (and (at start (decrease (r4) 6)) (at end (increase (r4) 6)) (at end (a61_pres))))
+ (:durative-action a62
+  :parameters ()
+  :duration (= ?duration 0)
+  :condition (and (at start (not (a62_pres)))(at start (a59_pres))(at start (a60_pres))(at start (a61_pres)))
+  :effect (and (at end (a62_pres))))
+)

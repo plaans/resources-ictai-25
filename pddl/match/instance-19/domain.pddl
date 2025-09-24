@@ -1,0 +1,15 @@
+(define (domain socs2025_match_cellar_1-domain)
+ (:requirements :strips :equality :numeric-fluents :durative-actions)
+ (:predicates (handfree))
+ (:functions (num_matches) (num_fuses) (num_lit_matches) (num_mended_fuses))
+ (:durative-action light_match
+  :parameters ()
+  :duration (= ?duration 5)
+  :condition (and (at start (handfree))(at start (< 0 (num_matches))))
+  :effect (and (at start (decrease (num_matches) 1)) (at start (increase (num_lit_matches) 1)) (at end (decrease (num_lit_matches) 1))))
+ (:durative-action mend_fuse
+  :parameters ()
+  :duration (= ?duration 2)
+  :condition (and (at start (handfree))(at start (< 0 (num_lit_matches)))(at end (< 0 (num_lit_matches))))
+  :effect (and (at start (not (handfree))) (at end (increase (num_mended_fuses) 1)) (at end (handfree))))
+)
